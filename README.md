@@ -39,7 +39,7 @@ The app dynamically fetches Pokémon data using JavaScript's **Fetch API** and d
 
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/abdulqaderAtif/pokemon-search-app.git
+   git clone https://github.com/abdulqaderAtif/pokemon-finder.git
 
 2. Open the project folder.
 
@@ -51,7 +51,7 @@ The app dynamically fetches Pokémon data using JavaScript's **Fetch API** and d
 
 PokéAPI
 
-https://pokeapi.co/api/v2/pokemon/
+https://pokeapi.co/
 
 ## 📜 License
 
