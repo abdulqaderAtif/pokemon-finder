@@ -34,6 +34,13 @@ The app dynamically fetches Pokémon data using JavaScript's **Fetch API** and d
 
 ---
 
+## 🚀 Live Demo
+
+You can view the live version of the website here:
+
+https://abdulqaderatif.github.io/pokemon-finder/
+
+---
 
 ## 🚀 How to Run the Project
 
