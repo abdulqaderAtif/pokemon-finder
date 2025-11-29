@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Search App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Pokémon Search</h1>
+        <p>Type a Pokémon name or ID and explore its details!</p>
+    </header>
+
+    <main class="app-container">
+        <!-- Search Form -->
+        <form id="pokemon-form" class="pokemon-form">
+            <label for="pokemon-input">Pokémon name or ID:</label>
+            <input 
+                type="text" 
+                id="pokemon-input" 
+                name="pokemon" 
+                placeholder="e.g. pikachu, 1, charizard"
+                autocomplete="off"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Helper text updated on keyup event -->
+        <p id="input-helper" class="helper-text">
+            Start typing a Pokémon name or ID...
+        </p>
+
+        <!-- Action buttons -->
+        <div class="buttons-row">
+            <button id="random-btn" type="button">Random Pokémon</button>
+            <button id="clear-btn" type="button" class="secondary">Clear</button>
+        </div>
+
+        <!-- Error messages -->
+        <div id="error-message" class="error-message"></div>
+
+        <!-- Pokémon result-->
+        <section id="pokemon-result" class="pokemon-result">
+            <!-- JS will create the card here -->
+        </section>
+    </main>
+
+    <!-- JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

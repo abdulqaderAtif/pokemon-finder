@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f5fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+.app-header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #ffcb05;
+    color: #2a75bb;
+}
+
+.app-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+.pokemon-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.pokemon-form input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.pokemon-form button {
+    padding: 0.6rem;
+    margin-top: 0.25rem;
+    border: none;
+    border-radius: 6px;
+    background: #2a75bb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pokemon-form button:hover {
+    opacity: 0.9;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1rem;
+}
+
+.buttons-row button {
+    flex: 1;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#random-btn {
+    background: #3c5aa6;
+    color: white;
+}
+
+#clear-btn {
+    background: #eee;
+    color: #333;
+}
+
+.helper-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+.error-message {
+    min-height: 1.2rem;
+    color: #c0392b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.pokemon-result {
+    margin-top: 1rem;
+}
+
+.pokemon-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.pokemon-card img {
+    width: 100%;
+    max-width: 180px;
+    justify-self: center;
+}
+
+.pokemon-info h2 {
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+}
+
+.pokemon-info p {
+    margin-bottom: 0.25rem;
+}
+
+.pokemon-types, .pokemon-abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.badge {
+    background: #ffcb05;
+    color: #2a75bb;
+    border-radius: 999px;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .pokemon-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
